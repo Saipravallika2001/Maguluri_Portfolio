@@ -5,7 +5,7 @@ const skills = [
     category: "Programming & Scripting",
     items: [
       { name: "Data Structures and Algorithms", icon: "/icons/dsa.png" },
-      { name: "Java", icon: "/icons/java.png" },
+      { name: "Java", icon: "/public/icons/java.png" },
       { name: "Linux", icon: "/icons/linux.png" },
       { name: "Python", icon: "/icons/python.png" },
       { name: "R Programming", icon: "/icons/r.jpeg" },

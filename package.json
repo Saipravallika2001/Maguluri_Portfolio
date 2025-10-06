@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "homepage": "https://Saipravallika2001.github.io/Maguluri_Portfolio",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saipravallika2001/Maguluri_Portfolio.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
