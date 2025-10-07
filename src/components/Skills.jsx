@@ -1,5 +1,8 @@
 import React from "react";
 
+// prepend the repo base and strip any accidental leading slash
+const withBase = (p) => `${import.meta.env.BASE_URL}${p.replace(/^\//, "")}`;
+
 const skills = [
   {
     category: "Programming & Scripting",
@@ -110,7 +113,7 @@ const skills = [
     items: [
       { name: "Excel", icon: "icons/excel.png" },
       { name: "Power BI", icon: "icons/powerbi.jpeg" },
-      { name: "Tableau", icon: "icons/Tableau.png" },
+      { name: "Tableau", icon: "icons/Tableau.png" },  // make sure file name matches case
       { name: "Streamlit", icon: "icons/streamlit.png" },
       { name: "Looker", icon: "icons/looker.png" },
     ],
@@ -135,12 +138,9 @@ const Skills = () => {
               </h3>
               <ul className="grid grid-cols-2 gap-x-6 gap-y-4">
                 {group.items.map((skill, idx) => (
-                  <li
-                    key={idx}
-                    className="flex items-center space-x-3 text-gray-300 text-sm"
-                  >
+                  <li key={idx} className="flex items-center space-x-3 text-gray-300 text-sm">
                     <img
-                      src={skill.icon}
+                      src={withBase(skill.icon)}
                       alt={skill.name}
                       className="w-10 h-10 object-contain"
                     />
